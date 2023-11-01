@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+    printf("To check whether a number is prime or not\n");
+    int gno,i,pnop;
+    scanf("%d",&gno);
+    for(i=2;i<gno;i++)
+    {
+        if(gno%i==0)
+        {
+            pnop=1;
+        }
+    }
+    if(pnop==1)
+    {
+        printf("The given number is not prime");
+    }
+    else if(gno==1)
+    {
+        printf("Neither prime nor composite");
+    }
+    else 
+    {
+        printf("The given number is prime");
+    }
+    
+}
